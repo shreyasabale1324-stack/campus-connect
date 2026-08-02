@@ -380,3 +380,104 @@ body{
     line-height:1.5;
 
 }
+/* ==============================
+   ABOUT SECTION
+================================= */
+
+
+.about{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:60px;
+
+    padding:80px 8%;
+
+    background:#F8FAFC;
+
+}
+
+
+/* LEFT BOX */
+
+
+.about-image{
+
+    width:45%;
+
+}
+
+
+.about-box{
+
+    background:white;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+
+.about-box:first-letter{
+
+    font-size:60px;
+
+}
+
+
+.about-box h3{
+
+    margin:20px 0;
+
+    color:#4F46E5;
+
+}
+
+
+.about-box p{
+
+    color:#64748B;
+
+}
+
+
+
+/* RIGHT CONTENT */
+
+
+.about-content{
+
+    width:50%;
+
+}
+
+
+.about-content h2{
+
+    font-size:40px;
+
+    color:#1E293B;
+
+    margin-bottom:20px;
+
+}
+
+
+.about-content p{
+
+    color:#64748B;
+
+    line-height:1.7;
+
+    margin-bottom:15px;
+
+}
