@@ -135,3 +135,130 @@ body{
     background:#4338CA;
 
 }
+/* ==============================
+   HERO SECTION
+================================= */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px 8%;
+
+    gap:50px;
+
+}
+
+
+/* LEFT CONTENT */
+
+.hero-content{
+
+    width:50%;
+
+}
+
+
+.hero-content h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+    color:#1E293B;
+
+}
+
+
+.hero-content h1 span{
+
+    color:#4F46E5;
+
+}
+
+
+.hero-content p{
+
+    margin-top:20px;
+
+    font-size:18px;
+
+    color:#64748B;
+
+    line-height:1.6;
+
+}
+
+
+/* BUTTONS */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+
+.outline-btn{
+
+    text-decoration:none;
+
+    padding:12px 24px;
+
+    border-radius:8px;
+
+    border:2px solid #4F46E5;
+
+    color:#4F46E5;
+
+    font-weight:600;
+
+}
+
+
+/* RIGHT CARD */
+
+.hero-card{
+
+    width:40%;
+
+}
+
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+
+.card h3{
+
+    color:#4F46E5;
+
+    margin-bottom:20px;
+
+}
+
+
+.card p{
+
+    margin:15px 0;
+
+    color:#475569;
+
+}
