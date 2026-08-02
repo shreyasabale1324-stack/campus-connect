@@ -481,3 +481,142 @@ body{
     margin-bottom:15px;
 
 }
+/* ==============================
+   FOOTER SECTION
+================================= */
+
+
+.footer{
+
+    background:#1E293B;
+
+    color:white;
+
+    padding:60px 8% 20px;
+
+}
+
+
+
+/* MAIN FOOTER */
+
+
+.footer-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+}
+
+
+
+/* BRAND */
+
+
+.footer-brand h2{
+
+    font-size:28px;
+
+}
+
+
+.footer-brand span{
+
+    color:#7C3AED;
+
+}
+
+
+.footer-brand p{
+
+    margin-top:15px;
+
+    color:#CBD5E1;
+
+    max-width:300px;
+
+    line-height:1.6;
+
+}
+
+
+
+/* LINKS */
+
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+.footer-links h3{
+
+    margin-bottom:10px;
+
+}
+
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#CBD5E1;
+
+    transition:.3s;
+
+}
+
+
+.footer-links a:hover{
+
+    color:white;
+
+}
+
+
+
+/* CONTACT */
+
+
+.footer-contact h3{
+
+    margin-bottom:15px;
+
+}
+
+
+.footer-contact p{
+
+    color:#CBD5E1;
+
+    margin-bottom:10px;
+
+}
+
+
+
+/* BOTTOM */
+
+
+.footer-bottom{
+
+    text-align:center;
+
+    border-top:1px solid #475569;
+
+    margin-top:40px;
+
+    padding-top:20px;
+
+    color:#CBD5E1;
+
+}
