@@ -620,3 +620,129 @@ body{
     color:#CBD5E1;
 
 }
+/* ==============================
+   RESPONSIVE DESIGN
+================================= */
+
+
+/* TABLET */
+
+@media(max-width:900px){
+
+
+    .navbar{
+
+        padding:20px 5%;
+
+    }
+
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+    .hero-content{
+
+        width:100%;
+
+    }
+
+
+    .hero-card{
+
+        width:80%;
+
+    }
+
+
+    .feature-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    .about{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+
+    .about-image,
+    .about-content{
+
+        width:100%;
+
+    }
+
+
+    .footer-container{
+
+        flex-direction:column;
+
+    }
+
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+
+    .navbar .btn{
+
+        display:none;
+
+    }
+
+
+    .hero-content h1{
+
+        font-size:38px;
+
+    }
+
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-direction:column;
+
+    }
+
+
+    .feature-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .section-title h2,
+    .about-content h2{
+
+        font-size:32px;
+
+    }
+
+
+}
