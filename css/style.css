@@ -1,0 +1,137 @@
+/* ==============================
+   GOOGLE FONT
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==============================
+   RESET
+================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==============================
+   BODY
+================================= */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#F8FAFC;
+
+}
+
+/* ==============================
+   NAVBAR
+================================= */
+
+.navbar{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:white;
+
+    box-shadow:0 3px 12px rgba(0,0,0,0.08);
+
+    position:sticky;
+
+    top:0;
+
+}
+
+/* ==============================
+   LOGO
+================================= */
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#4F46E5;
+
+    cursor:pointer;
+
+}
+
+.logo span{
+
+    color:#7C3AED;
+
+}
+
+/* ==============================
+   NAV LINKS
+================================= */
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:40px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#1E293B;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#4F46E5;
+
+}
+
+/* ==============================
+   BUTTON
+================================= */
+
+.btn{
+
+    text-decoration:none;
+
+    background:#4F46E5;
+
+    color:white;
+
+    padding:12px 24px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#4338CA;
+
+}
