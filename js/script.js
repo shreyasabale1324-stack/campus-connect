@@ -1,47 +1,61 @@
 // ===============================
-// SIGNUP FORM VALIDATION
+// SIGNUP FORM
 // ===============================
 
 const signupForm = document.getElementById("signupForm");
 
 if (signupForm) {
 
-    signupForm.addEventListener("submit", function(event) {
+    signupForm.addEventListener("submit", function (event) {
 
-        // Prevent page from refreshing
         event.preventDefault();
 
-        // Get input values
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const password = document.getElementById("password").value.trim();
 
-        // Check empty fields
+        // Empty Validation
         if (name === "" || email === "" || password === "") {
 
             alert("Please fill all fields.");
 
             return;
+
         }
 
-        // Email validation
+        // Email Validation
         if (!email.includes("@") || !email.includes(".")) {
 
             alert("Enter a valid email.");
 
             return;
+
         }
 
-        // Password length
+        // Password Validation
         if (password.length < 6) {
 
             alert("Password must be at least 6 characters.");
 
             return;
+
         }
 
-        // Success
+        // Create User Object
+        const user = {
+
+            name: name,
+            email: email,
+            password: password
+
+        };
+
+        // Save User in Local Storage
+        localStorage.setItem("user", JSON.stringify(user));
+
         alert("Signup Successful!");
+
+        signupForm.reset();
 
     });
 
