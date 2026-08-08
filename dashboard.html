@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,12 @@
     <title>Student Dashboard</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
+
 <body>
+
 
     <!-- =========================
          NAVBAR
@@ -30,11 +34,15 @@
     </nav>
 
 
+
     <!-- =========================
          DASHBOARD
     ========================== -->
 
     <main class="dashboard">
+
+
+        <!-- Welcome -->
 
         <section class="welcome">
 
@@ -49,15 +57,21 @@
         </section>
 
 
+
         <!-- =========================
              DASHBOARD CARDS
         ========================== -->
 
         <section class="dashboard-cards">
 
+
+            <!-- Courses -->
+
             <div class="dashboard-card">
 
-                <h3>📚 Courses</h3>
+                <h3>
+                    📚 Courses
+                </h3>
 
                 <p class="card-number">
                     6
@@ -70,9 +84,14 @@
             </div>
 
 
+
+            <!-- Assignments -->
+
             <div class="dashboard-card">
 
-                <h3>📝 Assignments</h3>
+                <h3>
+                    📝 Assignments
+                </h3>
 
                 <p class="card-number">
                     4
@@ -85,9 +104,14 @@
             </div>
 
 
+
+            <!-- Attendance -->
+
             <div class="dashboard-card">
 
-                <h3>📅 Attendance</h3>
+                <h3>
+                    📅 Attendance
+                </h3>
 
                 <p class="card-number">
                     85%
@@ -100,9 +124,14 @@
             </div>
 
 
+
+            <!-- CGPA -->
+
             <div class="dashboard-card">
 
-                <h3>🏆 CGPA</h3>
+                <h3>
+                    🏆 CGPA
+                </h3>
 
                 <p class="card-number">
                     9.2
@@ -114,7 +143,9 @@
 
             </div>
 
+
         </section>
+
 
 
         <!-- =========================
@@ -127,34 +158,171 @@
                 Quick Actions
             </h2>
 
+
             <div class="action-buttons">
 
-                <button>
+
+                <button id="coursesBtn">
                     📚 View Courses
                 </button>
 
-                <button>
+
+                <button id="assignmentsBtn">
                     📝 Assignments
                 </button>
 
-                <button>
+
+                <button id="gradesBtn">
                     📊 View Grades
                 </button>
 
-                <button>
+
+                <button id="attendanceBtn">
                     📅 Attendance
                 </button>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             COURSES SECTION
+        ========================== -->
+
+        <section id="coursesSection" class="courses-section">
+
+            <h2>
+                📚 My Courses
+            </h2>
+
+
+            <div class="courses-container">
+
+
+                <div class="course-card">
+
+                    <h3>
+                        C++ Programming
+                    </h3>
+
+                    <p>
+                        Data Structures and Object-Oriented Programming
+                    </p>
+
+                    <span>
+                        Progress: 75%
+                    </span>
+
+                </div>
+
+
+
+                <div class="course-card">
+
+                    <h3>
+                        Java Programming
+                    </h3>
+
+                    <p>
+                        Java fundamentals and application development
+                    </p>
+
+                    <span>
+                        Progress: 60%
+                    </span>
+
+                </div>
+
+
+
+                <div class="course-card">
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        HTML, CSS and JavaScript
+                    </p>
+
+                    <span>
+                        Progress: 80%
+                    </span>
+
+                </div>
+
+
+
+                <div class="course-card">
+
+                    <h3>
+                        Database Management
+                    </h3>
+
+                    <p>
+                        SQL and database fundamentals
+                    </p>
+
+                    <span>
+                        Progress: 65%
+                    </span>
+
+                </div>
+
+
+
+                <div class="course-card">
+
+                    <h3>
+                        Mathematics
+                    </h3>
+
+                    <p>
+                        Engineering mathematics and problem solving
+                    </p>
+
+                    <span>
+                        Progress: 70%
+                    </span>
+
+                </div>
+
+
+
+                <div class="course-card">
+
+                    <h3>
+                        Computer Networks
+                    </h3>
+
+                    <p>
+                        Networking concepts and protocols
+                    </p>
+
+                    <span>
+                        Progress: 55%
+                    </span>
+
+                </div>
+
 
             </div>
 
         </section>
 
+
     </main>
+
 
 
     <!-- JavaScript -->
 
     <script src="script.js"></script>
+
 
 </body>
 

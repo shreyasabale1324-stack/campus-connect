@@ -174,3 +174,25 @@ if (logoutBtn) {
     });
 
 }
+// ===============================
+// COURSES
+// ===============================
+
+const coursesBtn = document.getElementById("coursesBtn");
+
+const coursesSection = document.getElementById("coursesSection");
+
+
+if (coursesBtn && coursesSection) {
+
+    coursesBtn.addEventListener("click", function () {
+
+        coursesSection.style.display = "block";
+
+        coursesSection.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    });
+
+}
