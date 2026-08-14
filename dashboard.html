@@ -7,27 +7,27 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Student Dashboard</title>
+    <title>StudentHub Dashboard</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
 
 </head>
 
 
 <body>
 
-
     <!-- =========================
          NAVBAR
     ========================== -->
 
-    <nav class="navbar">
+    <nav class="dashboard-navbar">
 
-        <div class="logo">
+        <div class="dashboard-logo">
             StudentHub
         </div>
 
-        <button id="logoutBtn">
+        <button id="logoutBtn" class="logout-btn">
             Logout
         </button>
 
@@ -36,22 +36,26 @@
 
 
     <!-- =========================
-         DASHBOARD
+         MAIN DASHBOARD
     ========================== -->
 
     <main class="dashboard">
 
 
-        <!-- Welcome -->
+        <!-- WELCOME -->
 
-        <section class="welcome">
+        <section class="welcome-section">
+
+            <p class="welcome-small">
+                Student Dashboard
+            </p>
 
             <h1>
                 Welcome, <span id="studentName">Student</span> 👋
             </h1>
 
-            <p>
-                Here's what's happening with your studies.
+            <p class="welcome-text">
+                Manage your courses, assignments, grades and attendance.
             </p>
 
         </section>
@@ -59,87 +63,79 @@
 
 
         <!-- =========================
-             DASHBOARD CARDS
+             STAT CARDS
         ========================== -->
 
-        <section class="dashboard-cards">
+        <section class="stats-grid">
 
 
-            <!-- Courses -->
+            <div class="stat-card">
 
-            <div class="dashboard-card">
+                <div class="stat-icon">
+                    📚
+                </div>
 
-                <h3>
-                    📚 Courses
-                </h3>
+                <div>
+                    <p>Courses</p>
 
-                <p class="card-number">
-                    6
-                </p>
+                    <h2>6</h2>
 
-                <p>
-                    Active Courses
-                </p>
+                    <span>Active Courses</span>
+                </div>
 
             </div>
 
 
 
-            <!-- Assignments -->
+            <div class="stat-card">
 
-            <div class="dashboard-card">
+                <div class="stat-icon">
+                    📝
+                </div>
 
-                <h3>
-                    📝 Assignments
-                </h3>
+                <div>
+                    <p>Assignments</p>
 
-                <p class="card-number">
-                    4
-                </p>
+                    <h2>4</h2>
 
-                <p>
-                    Pending Assignments
-                </p>
+                    <span>Pending</span>
+                </div>
 
             </div>
 
 
 
-            <!-- Attendance -->
+            <div class="stat-card">
 
-            <div class="dashboard-card">
+                <div class="stat-icon">
+                    📅
+                </div>
 
-                <h3>
-                    📅 Attendance
-                </h3>
+                <div>
+                    <p>Attendance</p>
 
-                <p class="card-number">
-                    85%
-                </p>
+                    <h2>85%</h2>
 
-                <p>
-                    Overall Attendance
-                </p>
+                    <span>Overall</span>
+                </div>
 
             </div>
 
 
 
-            <!-- CGPA -->
+            <div class="stat-card">
 
-            <div class="dashboard-card">
+                <div class="stat-icon">
+                    🏆
+                </div>
 
-                <h3>
-                    🏆 CGPA
-                </h3>
+                <div>
+                    <p>CGPA</p>
 
-                <p class="card-number">
-                    9.2
-                </p>
+                    <h2>9.2</h2>
 
-                <p>
-                    Current CGPA
-                </p>
+                    <span>Current</span>
+                </div>
 
             </div>
 
@@ -152,163 +148,163 @@
              QUICK ACTIONS
         ========================== -->
 
-        <section class="quick-actions">
+        <section class="quick-section">
 
             <h2>
                 Quick Actions
             </h2>
 
+            <p>
+                Choose what you want to view.
+            </p>
 
-            <div class="action-buttons">
 
+            <div class="quick-buttons">
 
-                <button id="coursesBtn">
-                    📚 View Courses
+                <button id="coursesBtn" class="quick-btn">
+                    📚
+                    <span>View Courses</span>
                 </button>
 
 
-                <button id="assignmentsBtn">
-                    📝 Assignments
+                <button id="assignmentsBtn" class="quick-btn">
+                    📝
+                    <span>Assignments</span>
                 </button>
 
 
-                <button id="gradesBtn">
-                    📊 View Grades
+                <button id="gradesBtn" class="quick-btn">
+                    📊
+                    <span>View Grades</span>
                 </button>
 
 
-                <button id="attendanceBtn">
-                    📅 Attendance
+                <button id="attendanceBtn" class="quick-btn">
+                    📅
+                    <span>Attendance</span>
                 </button>
-
 
             </div>
-
 
         </section>
 
 
 
         <!-- =========================
-             COURSES SECTION
+             COURSES
         ========================== -->
 
-        <section id="coursesSection" class="courses-section">
+        <section id="coursesSection" class="dashboard-section">
 
-            <h2>
-                📚 My Courses
-            </h2>
+            <div class="section-heading">
 
-
-            <div class="courses-container">
-
-
-                <div class="course-card">
-
-                    <h3>
-                        C++ Programming
-                    </h3>
+                <div>
+                    <h2>📚 My Courses</h2>
 
                     <p>
-                        Data Structures and Object-Oriented Programming
+                        Your currently active courses.
                     </p>
+                </div>
 
-                    <span>
-                        Progress: 75%
-                    </span>
+            </div>
+
+
+            <div id="coursesContainer" class="content-grid">
+
+                <!-- JavaScript will create courses -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ASSIGNMENTS
+        ========================== -->
+
+        <section id="assignmentsSection" class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>📝 My Assignments</h2>
+
+                    <p>
+                        Keep track of your upcoming work.
+                    </p>
 
                 </div>
 
+            </div>
 
 
-                <div class="course-card">
+            <div id="assignmentsContainer" class="content-grid">
 
-                    <h3>
-                        Java Programming
-                    </h3>
+                <!-- JavaScript will create assignments -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             GRADES
+        ========================== -->
+
+        <section id="gradesSection" class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>📊 My Grades</h2>
 
                     <p>
-                        Java fundamentals and application development
+                        Your latest academic performance.
                     </p>
-
-                    <span>
-                        Progress: 60%
-                    </span>
 
                 </div>
 
+            </div>
 
 
-                <div class="course-card">
+            <div id="gradesContainer" class="content-grid">
 
-                    <h3>
-                        Web Development
-                    </h3>
+                <!-- JavaScript will create grades -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ATTENDANCE
+        ========================== -->
+
+        <section id="attendanceSection" class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>📅 My Attendance</h2>
 
                     <p>
-                        HTML, CSS and JavaScript
+                        Track your attendance subject-wise.
                     </p>
-
-                    <span>
-                        Progress: 80%
-                    </span>
 
                 </div>
 
+            </div>
 
 
-                <div class="course-card">
+            <div id="attendanceContainer" class="content-grid">
 
-                    <h3>
-                        Database Management
-                    </h3>
-
-                    <p>
-                        SQL and database fundamentals
-                    </p>
-
-                    <span>
-                        Progress: 65%
-                    </span>
-
-                </div>
-
-
-
-                <div class="course-card">
-
-                    <h3>
-                        Mathematics
-                    </h3>
-
-                    <p>
-                        Engineering mathematics and problem solving
-                    </p>
-
-                    <span>
-                        Progress: 70%
-                    </span>
-
-                </div>
-
-
-
-                <div class="course-card">
-
-                    <h3>
-                        Computer Networks
-                    </h3>
-
-                    <p>
-                        Networking concepts and protocols
-                    </p>
-
-                    <span>
-                        Progress: 55%
-                    </span>
-
-                </div>
-
+                <!-- JavaScript will create attendance -->
 
             </div>
 
@@ -318,11 +314,11 @@
     </main>
 
 
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
-    <!-- JavaScript -->
-
-    <script src="script.js"></script>
-
+    <script src="js/script.js"></script>
 
 </body>
 
