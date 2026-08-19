@@ -7,181 +7,435 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>StudentHub Dashboard</title>
+    <title>Campus Connect | Dashboard</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/dashboard.css">
 
 </head>
 
-
 <body>
 
-    <!-- =========================
-         NAVBAR
-    ========================== -->
+    <!-- =========================================
+         SIDEBAR
+    ========================================== -->
 
-    <nav class="dashboard-navbar">
+    <aside class="sidebar">
 
-        <div class="dashboard-logo">
-            StudentHub
+        <!-- BRAND -->
+        <div class="brand">
+
+            <div class="brand-icon">
+                🎓
+            </div>
+
+            <span>
+                Campus Connect
+            </span>
+
         </div>
 
-        <button id="logoutBtn" class="logout-btn">
-            Logout
-        </button>
 
-    </nav>
+        <!-- NAVIGATION -->
+        <nav class="sidebar-nav">
+
+            <button
+                class="nav-item active"
+                id="dashboardNav"
+                type="button"
+            >
+                <span>🏠</span>
+                <span>Dashboard</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                id="coursesNav"
+                type="button"
+            >
+                <span>📚</span>
+                <span>Courses</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                id="assignmentsNav"
+                type="button"
+            >
+                <span>📝</span>
+                <span>Assignments</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                id="gradesNav"
+                type="button"
+            >
+                <span>📊</span>
+                <span>Grades</span>
+            </button>
+
+
+            <button
+                class="nav-item"
+                id="attendanceNav"
+                type="button"
+            >
+                <span>📅</span>
+                <span>Attendance</span>
+            </button>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <button
+                class="nav-item theme-btn"
+                id="themeToggle"
+                type="button"
+            >
+                <span id="themeIcon">🌙</span>
+                <span id="themeText">Dark Mode</span>
+            </button>
+
+
+            <button
+                class="nav-item logout-sidebar"
+                id="logoutBtn"
+                type="button"
+            >
+                <span>🚪</span>
+                <span>Logout</span>
+            </button>
+
+        </div>
+
+    </aside>
 
 
 
-    <!-- =========================
-         MAIN DASHBOARD
-    ========================== -->
+    <!-- =========================================
+         MAIN CONTENT
+    ========================================== -->
 
-    <main class="dashboard">
+    <main class="main-content">
 
 
-        <!-- WELCOME -->
+        <!-- =====================================
+             TOP BAR
+        ====================================== -->
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="page-label">
+                    Student Portal
+                </p>
+
+                <h2>
+                    Dashboard
+                </h2>
+
+            </div>
+
+
+            <div class="profile-area">
+
+                <button
+                    class="notification-btn"
+                    id="notificationBtn"
+                    type="button"
+                    title="Notifications"
+                >
+                    🔔
+                </button>
+
+
+                <div class="profile">
+
+                    <div class="avatar">
+
+                        <span id="profileInitial">
+                            S
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <strong id="profileName">
+                            Student
+                        </strong>
+
+                        <span>
+                            B.Tech IT
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =====================================
+             WELCOME SECTION
+        ====================================== -->
 
         <section class="welcome-section">
 
-            <p class="welcome-small">
-                Student Dashboard
-            </p>
+            <div>
 
-            <h1>
-                Welcome, <span id="studentName">Student</span> 👋
-            </h1>
+                <p class="welcome-small">
+                    Student Dashboard
+                </p>
 
-            <p class="welcome-text">
-                Manage your courses, assignments, grades and attendance.
-            </p>
+
+                <h1>
+                    Welcome,
+                    <span id="studentName">
+                        Student
+                    </span>
+                    👋
+                </h1>
+
+
+                <p class="welcome-text">
+                    Manage your courses, assignments,
+                    grades and attendance.
+                </p>
+
+            </div>
+
+
+            <div class="welcome-icon">
+                🎓
+            </div>
 
         </section>
 
 
 
-        <!-- =========================
-             STAT CARDS
-        ========================== -->
+        <!-- =====================================
+             STATISTICS
+        ====================================== -->
 
         <section class="stats-grid">
 
 
+            <!-- COURSES -->
+
             <div class="stat-card">
 
-                <div class="stat-icon">
+                <div class="stat-icon purple">
                     📚
                 </div>
 
                 <div>
-                    <p>Courses</p>
 
-                    <h2>6</h2>
+                    <p>
+                        Courses
+                    </p>
 
-                    <span>Active Courses</span>
+                    <h2 id="courseCount">
+                        6
+                    </h2>
+
+                    <span>
+                        Active Courses
+                    </span>
+
                 </div>
 
             </div>
 
 
 
+            <!-- ASSIGNMENTS -->
+
             <div class="stat-card">
 
-                <div class="stat-icon">
+                <div class="stat-icon orange">
                     📝
                 </div>
 
                 <div>
-                    <p>Assignments</p>
 
-                    <h2>4</h2>
+                    <p>
+                        Assignments
+                    </p>
 
-                    <span>Pending</span>
+                    <h2 id="assignmentCount">
+                        4
+                    </h2>
+
+                    <span>
+                        Pending
+                    </span>
+
                 </div>
 
             </div>
 
 
 
+            <!-- ATTENDANCE -->
+
             <div class="stat-card">
 
-                <div class="stat-icon">
+                <div class="stat-icon teal">
                     📅
                 </div>
 
                 <div>
-                    <p>Attendance</p>
 
-                    <h2>85%</h2>
+                    <p>
+                        Attendance
+                    </p>
 
-                    <span>Overall</span>
+                    <h2 id="attendanceOverall">
+                        85%
+                    </h2>
+
+                    <span>
+                        Overall
+                    </span>
+
                 </div>
 
             </div>
 
 
 
+            <!-- CGPA -->
+
             <div class="stat-card">
 
-                <div class="stat-icon">
+                <div class="stat-icon green">
                     🏆
                 </div>
 
                 <div>
-                    <p>CGPA</p>
 
-                    <h2>9.2</h2>
+                    <p>
+                        CGPA
+                    </p>
 
-                    <span>Current</span>
+                    <h2 id="cgpaValue">
+                        9.2
+                    </h2>
+
+                    <span>
+                        Current
+                    </span>
+
                 </div>
 
             </div>
-
 
         </section>
 
 
 
-        <!-- =========================
+        <!-- =====================================
              QUICK ACTIONS
-        ========================== -->
+        ====================================== -->
 
         <section class="quick-section">
 
-            <h2>
-                Quick Actions
-            </h2>
+            <div class="section-title">
 
-            <p>
-                Choose what you want to view.
-            </p>
+                <h2>
+                    Quick Actions
+                </h2>
+
+                <p>
+                    Choose what you want to view.
+                </p>
+
+            </div>
 
 
             <div class="quick-buttons">
 
-                <button id="coursesBtn" class="quick-btn">
-                    📚
-                    <span>View Courses</span>
+
+                <button
+                    class="quick-btn"
+                    id="coursesBtn"
+                    type="button"
+                >
+
+                    <div class="quick-icon">
+                        📚
+                    </div>
+
+                    <span>
+                        View Courses
+                    </span>
+
                 </button>
 
 
-                <button id="assignmentsBtn" class="quick-btn">
-                    📝
-                    <span>Assignments</span>
+
+                <button
+                    class="quick-btn"
+                    id="assignmentsBtn"
+                    type="button"
+                >
+
+                    <div class="quick-icon">
+                        📝
+                    </div>
+
+                    <span>
+                        Assignments
+                    </span>
+
                 </button>
 
 
-                <button id="gradesBtn" class="quick-btn">
-                    📊
-                    <span>View Grades</span>
+
+                <button
+                    class="quick-btn"
+                    id="gradesBtn"
+                    type="button"
+                >
+
+                    <div class="quick-icon">
+                        📊
+                    </div>
+
+                    <span>
+                        View Grades
+                    </span>
+
                 </button>
 
 
-                <button id="attendanceBtn" class="quick-btn">
-                    📅
-                    <span>Attendance</span>
+
+                <button
+                    class="quick-btn"
+                    id="attendanceBtn"
+                    type="button"
+                >
+
+                    <div class="quick-icon">
+                        📅
+                    </div>
+
+                    <span>
+                        Attendance
+                    </span>
+
                 </button>
 
             </div>
@@ -190,28 +444,38 @@
 
 
 
-        <!-- =========================
+        <!-- =====================================
              COURSES
-        ========================== -->
+        ====================================== -->
 
-        <section id="coursesSection" class="dashboard-section">
+        <section
+            id="coursesSection"
+            class="dashboard-section"
+        >
 
             <div class="section-heading">
 
                 <div>
-                    <h2>📚 My Courses</h2>
+
+                    <h2>
+                        📚 My Courses
+                    </h2>
 
                     <p>
                         Your currently active courses.
                     </p>
+
                 </div>
 
             </div>
 
 
-            <div id="coursesContainer" class="content-grid">
+            <div
+                id="coursesContainer"
+                class="content-grid"
+            >
 
-                <!-- JavaScript will create courses -->
+                <!-- Courses generated by JavaScript -->
 
             </div>
 
@@ -219,17 +483,22 @@
 
 
 
-        <!-- =========================
+        <!-- =====================================
              ASSIGNMENTS
-        ========================== -->
+        ====================================== -->
 
-        <section id="assignmentsSection" class="dashboard-section">
+        <section
+            id="assignmentsSection"
+            class="dashboard-section"
+        >
 
             <div class="section-heading">
 
                 <div>
 
-                    <h2>📝 My Assignments</h2>
+                    <h2>
+                        📝 My Assignments
+                    </h2>
 
                     <p>
                         Keep track of your upcoming work.
@@ -240,9 +509,12 @@
             </div>
 
 
-            <div id="assignmentsContainer" class="content-grid">
+            <div
+                id="assignmentsContainer"
+                class="content-grid"
+            >
 
-                <!-- JavaScript will create assignments -->
+                <!-- Assignments generated by JavaScript -->
 
             </div>
 
@@ -250,17 +522,22 @@
 
 
 
-        <!-- =========================
+        <!-- =====================================
              GRADES
-        ========================== -->
+        ====================================== -->
 
-        <section id="gradesSection" class="dashboard-section">
+        <section
+            id="gradesSection"
+            class="dashboard-section"
+        >
 
             <div class="section-heading">
 
                 <div>
 
-                    <h2>📊 My Grades</h2>
+                    <h2>
+                        📊 My Grades
+                    </h2>
 
                     <p>
                         Your latest academic performance.
@@ -271,9 +548,12 @@
             </div>
 
 
-            <div id="gradesContainer" class="content-grid">
+            <div
+                id="gradesContainer"
+                class="content-grid"
+            >
 
-                <!-- JavaScript will create grades -->
+                <!-- Grades generated by JavaScript -->
 
             </div>
 
@@ -281,17 +561,22 @@
 
 
 
-        <!-- =========================
+        <!-- =====================================
              ATTENDANCE
-        ========================== -->
+        ====================================== -->
 
-        <section id="attendanceSection" class="dashboard-section">
+        <section
+            id="attendanceSection"
+            class="dashboard-section"
+        >
 
             <div class="section-heading">
 
                 <div>
 
-                    <h2>📅 My Attendance</h2>
+                    <h2>
+                        📅 My Attendance
+                    </h2>
 
                     <p>
                         Track your attendance subject-wise.
@@ -302,9 +587,12 @@
             </div>
 
 
-            <div id="attendanceContainer" class="content-grid">
+            <div
+                id="attendanceContainer"
+                class="content-grid"
+            >
 
-                <!-- JavaScript will create attendance -->
+                <!-- Attendance generated by JavaScript -->
 
             </div>
 
@@ -314,9 +602,10 @@
     </main>
 
 
-    <!-- =========================
+
+    <!-- =========================================
          JAVASCRIPT
-    ========================== -->
+    ========================================== -->
 
     <script src="js/script.js"></script>
 
